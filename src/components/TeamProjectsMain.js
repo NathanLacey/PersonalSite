@@ -20,7 +20,15 @@ class TeamProjectsMain extends React.Component {
           <span className="image main"><img src={pic03} alt="" /></span>
           {close}
         </article>
-
+        <article id="wombatCombat" className={`${this.props.article === 'wombatCombat' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Wombat Combat</h2>
+          <p></p>
+          {close}
+        </article>
+        <article id="castleGuard" className={`${this.props.article === 'castleGuard' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Castle Guard</h2>
+          {close}
+        </article>
       </div>
     )
   }
