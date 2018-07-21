@@ -5,6 +5,8 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
+import TeamProjectsHeader from '../components/TeamProjectsHeader'
+import TeamProjectsMain from '../components/TeamProjectsMain'
 
 class Template extends React.Component {
   constructor(props) {
@@ -99,13 +101,19 @@ class Template extends React.Component {
       )
     } else {
       content = (
-        <div id="wrapper" className="page">
-          <div style={{
-            maxWidth: '1140px'
-          }}>
-            {children()}
-          </div>
+        content = (
+        <div id="wrapper">
+          <TeamProjectsHeader onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
+          <TeamProjectsMain
+            isArticleVisible={this.state.isArticleVisible}
+            timeout={this.state.timeout}
+            articleTimeout={this.state.articleTimeout}
+            article={this.state.article}
+            onCloseArticle={this.handleCloseArticle}
+          />
+          <Footer timeout={this.state.timeout} />
         </div>
+      )
       )
     }
 
