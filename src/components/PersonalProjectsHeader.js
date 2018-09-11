@@ -7,13 +7,13 @@ const PersonalProjectsHeader = (props) => (
         </div>
         <div className="content">
             <div className="inner">
-                <h1><b>Team Projects</b></h1>
+                <h1><b>Personal Projects</b></h1>
             </div>
         </div>
         <nav>
             <ul>
                 <li><a href="javascript:;" onClick={() => { props.onOpenArticle('impulse') }}>Graphics Engine</a></li>
-                <li><a href="javascript:;" onClick={() => { props.onOpenArticle('tüdey') }}>2D Physics Engine</a></li>
+                <li><a href="javascript:;" onClick={() => { props.onOpenArticle('tï¿½dey') }}>2D Physics Engine</a></li>
                 <li><a href="/">Home</a></li>
             </ul>
         </nav>
