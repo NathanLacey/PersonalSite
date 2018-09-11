@@ -133,6 +133,14 @@ class Template extends React.Component {
             </div>
         )
     )
+} else {
+  content = (
+        content = (
+            <div id="wrapper">
+            <p>{location.pathname}</p>
+</div>
+        )
+    )
 }
 
     return (
