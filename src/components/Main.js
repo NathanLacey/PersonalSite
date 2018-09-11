@@ -6,7 +6,6 @@ import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 import picLogo from '../images/logo.png'
 
-import { Document } from 'react-pdf'
 const pdf = require('../assets/resources/Resume.pdf')
 
 class Main extends React.Component {
