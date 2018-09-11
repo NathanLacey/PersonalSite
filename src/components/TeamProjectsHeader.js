@@ -13,9 +13,9 @@ const TeamProjectsHeader = (props) => (
         <nav>
             <ul>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('wombatCombat')}}>Wombat Combat</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('tgp')}}>The Gauntlet Prismatic</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('castleGuard')}}>Castle Guard</a></li>
-                <li><a className="button" href="index">HomePage</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('tgp')}}>The Gauntlet Prismatic</a></li>
+                <li><a href="/">Home</a></li>
             </ul>
         </nav>
     </header>

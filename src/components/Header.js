@@ -7,15 +7,14 @@ const Header = (props) => (
         </div>
         <div className="content">
             <div className="inner">
-                <h1><b>Dimension</b></h1>
-                <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-                for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+                <h1>Nathan Lacey</h1>
+                <h2>Game Programmer</h2>
             </div>
         </div>
         <nav>
             <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('personalProjects')}}>Personal Projects</a></li>
-                <li><a className="button" href="new-page">Team Projects</a></li>
+                <li><a href="personal-project-page">Personal Projects</a></li>
+                <li><a href="team-project-page">Team Projects</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>Resume</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
             </ul>

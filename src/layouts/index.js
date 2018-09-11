@@ -7,6 +7,8 @@ import Main from '../components/Main'
 import Footer from '../components/Footer'
 import TeamProjectsHeader from '../components/TeamProjectsHeader'
 import TeamProjectsMain from '../components/TeamProjectsMain'
+import PersonalProjectsHeader from '../components/PersonalProjectsHeader'
+import PersonalProjectsMain from '../components/PersonalProjectsMain'
 
 class Template extends React.Component {
   constructor(props) {
@@ -87,7 +89,7 @@ class Template extends React.Component {
 
     if (location.pathname === rootPath) {
       content = (
-        <div id="wrapper">
+          <div id="wrapper">
           <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
           <Main
             isArticleVisible={this.state.isArticleVisible}
@@ -99,7 +101,7 @@ class Template extends React.Component {
           <Footer timeout={this.state.timeout} />
         </div>
       )
-    } else {
+    } else if (location.pathname === "/team-project-page"){
       content = (
         content = (
         <div id="wrapper">
@@ -115,7 +117,23 @@ class Template extends React.Component {
         </div>
       )
       )
-    }
+    } else if(location.pathname === "/personal-project-page") {
+    content = (
+        content = (
+            <div id="wrapper">
+                <PersonalProjectsHeader onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
+                <PersonalProjectsMain
+                    isArticleVisible={this.state.isArticleVisible}
+                    timeout={this.state.timeout}
+                    articleTimeout={this.state.articleTimeout}
+                    article={this.state.article}
+                    onCloseArticle={this.handleCloseArticle}
+                />
+                <Footer timeout={this.state.timeout} />
+            </div>
+        )
+    )
+}
 
     return (
       <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
