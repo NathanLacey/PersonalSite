@@ -26,17 +26,23 @@ class Main extends React.Component {
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">About</h2>
-                <span className="image main"><img src={picLogo} alt="" /></span>
-                <video width="320" height="240" controls>
-                    <source src="{demoReel}" type="video/mp4">
+          <h2 className="major">Demo Reel</h2>
+                
+                <video controls width="560" height="315" src={demoReel} preload="auto" controlsList="nodownload">
                      Your browser does not support the video tag.
-                    </source>   
                 </video>
-          <a href={pdf} download="Resume_NathanLacey.pdf" className="button">
+                <div>
+                    <p>
+          <a href={pdf} download="Resume_NathanLacey.pdf" className="button" align="left">
               Download Resume
           </a>
-          {close}
+                  ----------------------------
+          <a href={demoReel} download="DemoReel_NathanLacey.mp4" className="button" align="right">
+                    Download Demo Reel
+          </a>
+                        </p>
+                </div>
+          {close} 
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>

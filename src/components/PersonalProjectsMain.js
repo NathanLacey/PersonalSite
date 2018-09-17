@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import pic01 from '../images/pic01.jpg'
+import tudeyLogo from '../images/TudeyLogo.png'
 
 class PersonalProjectsMain extends React.Component {
     render() {
@@ -13,7 +14,7 @@ class PersonalProjectsMain extends React.Component {
 
                 <article id="tudey" className={`${this.props.article === 'tudey' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
                     <h2 className="major">Tudey Physics</h2>
-                    <span className="image main"><img src={pic01} alt="" /></span>
+                    <span className="image main"><img src={tudeyLogo} alt="" /></span>
                     <h3>Summary</h3>
                     <p>2D physics and math libraries created in C++. The initial goal of Tudey was to have an independent 2D physics library that could be plugged into an engine and have everything the gameplay side of the engine would need for a basic 2D game. This meant efficient collision detection and resolution, a way of controlling whether certain object collide with others, and an event system that allows you to make events external to Tudey, but have them handled by the engine. I ended up also adding some more things that are not necessary to make a 2D game with physics, but they are nice to have. </p>
                     <h3>Serialization</h3>

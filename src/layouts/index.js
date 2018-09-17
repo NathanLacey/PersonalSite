@@ -101,7 +101,7 @@ class Template extends React.Component {
           <Footer timeout={this.state.timeout} />
         </div>
       )
-    } else if (location.pathname === "/team-project-page/"){
+    } else if (location.pathname === "/team-project-page/" || location.pathname === "/team-project-page"){
       content = (
         content = (
         <div id="wrapper">
@@ -117,7 +117,7 @@ class Template extends React.Component {
         </div>
       )
       )
-    } else if(location.pathname === "/personal-project-page/") {
+    } else if (location.pathname === "/personal-project-page/" || location.pathname === "/personal-project-page") {
     content = (
         content = (
             <div id="wrapper">
