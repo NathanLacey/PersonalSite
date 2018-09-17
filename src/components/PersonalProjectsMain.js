@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import pic01 from '../images/pic01.jpg'
-import tudeyLogo from '../images/TudeyLogo.png'
+import tudeyLogo from '../images/TudeyLogo.PNG'
 
 class PersonalProjectsMain extends React.Component {
     render() {
