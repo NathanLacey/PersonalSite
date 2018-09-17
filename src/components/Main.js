@@ -7,6 +7,7 @@ import pic03 from '../images/pic03.jpg'
 import picLogo from '../images/logo.png'
 
 const pdf = require('../assets/resources/Resume.pdf')
+const demoReel = require('../assets/resources/DemoReel.mp4')
 
 class Main extends React.Component {
   render() {
@@ -26,7 +27,12 @@ class Main extends React.Component {
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">About</h2>
-          <span className="image main"><img src={picLogo} alt="" /></span>
+                <span className="image main"><img src={picLogo} alt="" /></span>
+                <video width="320" height="240" controls>
+                    <source src="{demoReel}" type="video/mp4">
+                     Your browser does not support the video tag.
+                    </source>   
+                </video>
           <a href={pdf} download="Resume_NathanLacey.pdf" className="button">
               Download Resume
           </a>
@@ -39,7 +45,7 @@ class Main extends React.Component {
                 <h3>LinkedIn:</h3><p> www.linkedin.com/in/nathanlacey</p>
           {close}
         </article>
-
+            
       </div>
     )
   }

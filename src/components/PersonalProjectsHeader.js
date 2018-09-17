@@ -13,7 +13,7 @@ const PersonalProjectsHeader = (props) => (
         <nav>
             <ul>
                 <li><a href="javascript:;" onClick={() => { props.onOpenArticle('impulse') }}>Graphics Engine</a></li>
-                <li><a href="javascript:;" onClick={() => { props.onOpenArticle('t�dey') }}>2D Physics Engine</a></li>
+                <li><a href="javascript:;" onClick={() => { props.onOpenArticle('tudey') }}>2D Physics Engine</a></li>
                 <li><a href="/">Home</a></li>
             </ul>
         </nav>
